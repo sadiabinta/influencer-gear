@@ -1,0 +1,128 @@
+/* font */
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Work+Sans&display=swap');
+/* navigation styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #3A3A3A;
+    margin:0;
+    padding:0;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin:87px 120px;
+}
+.nav-heading{
+    font-weight: 700;
+    font-size: 24px;
+}
+.nav-options{
+    padding-top: 8px;
+}
+.nav-options ul{
+    list-style: none;
+    display:flex;
+    gap: 34px;
+    
+}
+/* banner design */
+.banner-container{
+    display: flex;
+    gap:133px;
+    margin-left: 120px;
+    margin-right: 132px;
+
+}
+.banner-heading{
+    margin-bottom: 16px;
+}
+.banner-heading h2{
+    font-weight: 700;
+    font-size: 52px;
+    margin:0;
+}
+.banner-heading p{
+    font-weight: 600;
+    font-size: 16px;
+}
+.banner-image{
+    background-image: url("/images/Circle\ design.svg");
+    background-repeat:no-repeat;
+    /* width: 440px;
+    height: 414px; */
+
+}
+.prebook-btn{
+    color: #FFFFFF;
+    width: 196px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 16px;
+    background: #E02C6D;
+    border-radius: 41px;
+    border: none;
+
+}
+.shop-list{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin:170px;
+    /* text-align: center;
+    border-width:36px 62px; */
+    /* width: 986.47px;
+    height: 39.61px;
+    align-items: center;
+    
+    border-top-color:2px solid lightslategray;
+    border-bottom-color:2px solid lightslategray; */
+}
+.shop-list img{
+    padding-left: 16px;
+}
+.polular-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    margin:100px 196px;
+}
+.popular-heading{
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.popular-item{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding:15px;
+}
+.popular-item h4{
+    font-size:28px;
+}
+.popular-item h5{
+    font-weight: 400;
+    font-size: 24px;
+}
+.popular-item p{
+    font-weight: 700;
+    font-size: 14px;
+    color: #787885;
+}
+.popular-item img{
+    /* padding:15px; */
+}
+/* responsive */
+@media screen and (max-width:576px) {
+    .banner-container{
+        display:flex;
+        flex-direction: column-reverse;
+       }
+       .shop-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+}
